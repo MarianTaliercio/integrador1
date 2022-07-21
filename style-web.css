@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a:link, a:visited, a:active {
+    list-style: none;
+    border: none;
+    text-decoration: none;
+    color: #2a2a2a;
+}
+
+html{
+    scroll-behavior: smooth; 
+    scroll-padding-top: 100px;
+}
+
+body{
+    font-family: 'Assistant', sans-serif;
+}
+
+/*nabvar*/
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: red; */
+    border-bottom: #FFC300;
+    /* padding-right: 90px; */
+}
+
+hr {
+    margin-bottom: 30px;
+    height: 2px;
+    border: 0vw;
+    background-color: #FFC300
+}
+
+.navbar a {
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.logotipo {
+    width: 120px;
+}
+
+.caja-hambur {
+    background-color: #2a2a2a;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    margin: 15px;
+    cursor: pointer;
+
+}
+
+.caja-hambur span {
+    background-color: white;
+    height: 5px;
+    width: 30px;
+    border-radius: 10px;
+}
+
+.menu_toggle {
+display: none;
+}
+
+.menu_toggle:checked ~ .lista-menu {
+    display: block;
+    /* height: calc(100vh - 100px); */
+}
+
+.menu_toggle:checked ~ .logotipo {
+    display: none;
+}
+
+.lista-menu {
+    height: 100vh;
+    width: 100vw;
+    background-color: #FFC300;
+    /* padding: 20px 60px; */
+    border-radius: 10px;
+    display: none;
+}
+
+.lista-menu li {
+    padding: 10px;
+    color: white;
+    list-style-type: none;
+    font-weight: 500;
+}
+
+/*fin navbar*/
+
+/*TuPerfil mobile*/
+
+@media (max-width: 450px) {
+
+    .tarjeta-tuperfil{
+        background-color: white;
+        width: 85vw;
+        height: 120px;
+        margin: 0 auto;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    }
+
+    .caja1-tarjeta-tuperfil{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .tarjeta-tuperfil p{
+        /* margin-left: 15px; */
+        color: #2a2a2a;
+        padding: 10px;
+        font-weight: 700;
+    }
+
+    .gold{
+        background-color: #FFC300;
+        border-bottom-left-radius: 20px;
+    }
+
+    .referencias{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-top: -25px;
+        padding-bottom: 20px;
+    }
+
+    .referencia1, .referencia2, .referencia3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .circulo{
+        width: 60px;
+        height: 60px;
+        border-color: #FFC300;
+        /* border-style: solid; */
+        /* box-shadow: 0px 0px 10px 0px #2a2a2a; */
+        border-radius: 50px;
+        background-color: #2a2a2a;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .referencias img{
+        /* color: white; */
+        width: 30px;
+        height: 30px;
+    }
+
+}
+
+/*fin de tuperfil en mobile*/
+
+/*mision*/
+
+@media (max-width: 450px) {
+
+    .titulo-nosotros{
+        text-transform: uppercase;
+        background-color: #FFC300;
+        border-top-right-radius: 5px ;
+        border-bottom-right-radius: 5px;
+        max-width: 50%;
+        text-align: center;
+        margin-top:40px;
+    }
+
+    .caja-nosotros{
+        background-color: #FFC300;
+        margin: 0 auto;
+        width: 85%;
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 5px;
+    }
+
+    .caja-nosotros p{
+        font-weight: 500;
+    }
+
+}
+
+/*fin de mision empresarial*/
+
+
+
+/*blog*/
+
+@media (max-width: 450px) {
+
+    .titulo-de-notas{
+        text-transform: uppercase;
+        background-color: #2a2a2a;
+        color: white;
+        border-top-right-radius: 5px ;
+        border-bottom-right-radius: 5px;
+        max-width: 50%;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .notas h3{
+        font-weight: 300;
+        font-size: 1rem;
+    }
+
+    .notas{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 20px 0;
+    }
+
+    .nota1, .nota2, .nota3, .nota4{
+        display: flex;
+        flex-direction: column;
+        justify-content: baseline;
+        transition:  0.3s ease;
+        background-color: white;
+        padding-bottom: 10px;
+        margin: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+        box-shadow:0 2px 10px rgba(0,0,0,.3);
+        width: 45%;
+    }
+
+    .img-nota1{
+        background: url(/Imagenes/girgolas\ rosas.jpg) no-repeat center/cover;
+        height: 150px;
+    }
+
+    .img-nota2{
+        background: url(/Imagenes/hongos\ varios.jpg) no-repeat center/cover;
+        height: 150px;
+    }
+
+    .img-nota3{
+        background: url(/Imagenes/reishi.jpg) no-repeat center/cover;
+        height: 150px;
+    }
+
+    .img-nota4{
+        background: url(/Imagenes/melena\ de\ leon.jpg) no-repeat center/cover;
+        height: 150px;
+    }
+
+}
+
+/*fin de blog*/
+
+/*nosotros*/
+
+@media (max-width: 450px) {
+
+    .nosotros-titulo{
+        text-transform: uppercase;
+        background-color: #FFC300;
+        color: #2a2a2a;
+        border-top-right-radius: 5px ;
+        border-bottom-right-radius: 5px;
+        max-width: 50%;
+        text-align: center;
+        margin: 50px 0px 20px;
+    }
+
+    .nosotros-texto{
+        margin: 10px 15px;
+        padding: 10px;
+        transition:  0.3s ease;
+        background-color: white;
+        border-radius: 5px;
+        cursor: pointer;
+        box-shadow:0 2px 10px rgba(0,0,0,.3);
+    }
+
+}
+
+/*fin de nosotros*/
+
+
+/*ecommerce*/
+
+@media (max-width: 450px) {
+
+    .precios{
+        margin-top: 50px;
+        padding: 0px 0 50px;
+        background-color: #2a2a2a;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .precios h3{
+        margin: 20px 0;
+        text-align:center;
+        color: white;
+        text-transform: uppercase;
+        padding-top: 20px;
+    }
+
+    .girgolas, .portobellos, .melena-de-leon{
+        margin: 0 auto;
+        padding: 5px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 95%;
+        height: 60px;
+        border-radius: 10px;
+        background-color: #FFC300;
+    }
+
+    .girgolas-img{
+        height: 95%;
+        width: 50px;
+        background: url(/Imagenes/girgolas\ rosas.jpg) no-repeat center/cover;
+        border-radius: 50px;
+    }
+
+    .portobellos-img{
+        height: 95%;
+        width: 50px;
+        background: url(/Imagenes/girgolas\ rosas.jpg) no-repeat center/cover;
+        border-radius: 50px;
+    }
+
+    .melena-de-leon-img{
+        height: 95%;
+        width: 50px;
+        background: url(/Imagenes/girgolas\ rosas.jpg) no-repeat center/cover;
+        border-radius: 50px;
+    }
+
+
+}
+
+/*fin ecommerce*/
+
+
+/*fotter*/
+
+@media (max-width: 450px) {
+
+    .fotter{
+        height: 80px;
+        padding: 15px;
+        margin-top: -1px;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        background-color: #2a2a2a;
+        color: white;
+    }
+
+    .fotter p{
+        width: 100px;
+    }
+
+    .fotter img{
+        height: 50px;
+    }
+
+
+}
