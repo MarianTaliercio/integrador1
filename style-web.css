@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;700&family=Edu+QLD+Beginner:wght@400;500;600&display=swap');
+
 
 * {
     margin: 0;
@@ -10,7 +11,7 @@ a:link, a:visited, a:active {
     list-style: none;
     border: none;
     text-decoration: none;
-    color: #2a2a2a;
+    /* color: #2a2a2a; */
 }
 
 html{
@@ -23,6 +24,12 @@ body{
 }
 
 /*nabvar*/
+
+@media (max-width: 501px) {
+
+.navbar-desktop{
+    display: none;
+}
 
 .navbar{
     display: flex;
@@ -100,11 +107,191 @@ display: none;
     font-weight: 500;
 }
 
+}
+
+
+@media (min-width: 502px) {
+
+    /* a:link, a:visited, a:active {
+        color: white;
+    } */
+
+    .navbar{
+        display:none;
+    }
+
+    .logotipo {
+        width: 120px;
+    }
+
+    .navbar-desktop{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .navbar-desktop1{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-weight: bold;
+    }
+
+    .navbar-desktop1 a{
+        color: #2a2a2a;
+    }
+    
+    .navbar-desktop2{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        font-weight: bold;
+        }
+
+    .registrarte{
+        background-color: #2a2a2a;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 10px;
+    }
+
+    .iniciar-sesion {
+        color:#2a2a2a;
+        border-bottom: #2a2a2a;
+    }
+    
+
+}
+
 /*fin navbar*/
+
+
+/*hero*/
+
+@media (min-width: 502px) {
+
+    .hero-desktop{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* background-color: #2A2A2A; */
+    }
+
+    .titulo-hero{
+        margin: 50px 0px 10px;
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .contenedor {
+        margin: auto;
+        display: table;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .escritura { 
+        position: relative; 
+        float: left;
+        background: #FFC300;
+        color: #fff;
+        font-size: 3rem;
+    }
+    
+    .escritura span {
+        position:absolute;
+        right:0;
+        width:0;
+        background: white;
+        border-left: 1px solid #000;
+        animation: escribir 4s steps(50) infinite alternate;
+    }
+    
+    @keyframes escribir {
+        from { width: 100%}
+        to { width:0% }
+    }
+    
+    .hero-desktop p{
+        /* margin-top: 50px; */
+        font-weight: 500;
+        font-size: 1.1rem;
+        max-width: 750px;
+        color: #585858;
+        padding: 2.5px;
+    }
+    
+    .parrafo1-hero{
+        margin-top: 50px;
+    }
+
+    .hero-desktop button {
+        border-style: none;
+        margin-top: 40px;
+        padding: 20px 40px;
+        border-radius: 40px;
+        background-color: #518BEA;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1rem;
+        color: white;
+    }
+
+    .gral-flechas{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .caja-flecha{
+        display: flex;
+        justify-content: right;
+        margin-top: 10px;
+    }
+
+    .caja-flecha2{
+        display: flex;
+        justify-content: left;
+        margin-top: 30px;
+    }
+
+    .flecha-hero{ 
+        height: 35px;
+        transform: rotate(90deg);
+        margin: 10px;
+    }
+
+    .flecha-hero2{
+        height: 35px;
+        transform: rotate(270deg) scaleX(-1);
+        margin: 10px;
+    }
+
+    .text-flecha-hero{
+        max-width: 300px;
+        font-family: 'Edu QLD Beginner', "cursive";
+        font-weight: 500;
+        font-size: 1.1rem;
+        color: #585858;
+        padding-top: 30px;
+    }
+
+    
+
+}
+
+@media (max-width: 501px){
+    .hero-desktop{
+        display: none;
+    }
+} 
+
+/*fin hero*/
+
 
 /*TuPerfil mobile*/
 
-@media (max-width: 450px) {
+@media (max-width: 501px) {
 
     .tarjeta-tuperfil{
         background-color: white;
@@ -166,6 +353,14 @@ display: none;
     }
 
 }
+
+@media (min-width: 502px) {
+    .tuperfil{
+        display: none;
+    }
+}
+
+
 
 /*fin de tuperfil en mobile*/
 
