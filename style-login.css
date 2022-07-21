@@ -59,22 +59,22 @@ a{
         width: 60%;
     }
 
-    a{
+    /* a{
         height: 80px;
-    }
+    } */
 
 }
 
 
 
-@media (max-width: 450px) {
+@media (max-width: 501px) {
 
     body{
         gap:10px;
     }
 
     #gral {
-        width: 95%;
+        width: 90%;
         height: 80vh;
     }
 
@@ -89,7 +89,6 @@ a{
         justify-content: center;
         align-items: center;
     }
-
 
 }
 
@@ -143,7 +142,7 @@ text-decoration-style: solid;
 }
 
 
-@media (max-width: 450px) {
+@media (max-width: 501px) {
     
     .logo-cultivoshons{
         width: 80px;
@@ -186,7 +185,7 @@ text-decoration-style: solid;
     text-align: center;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 501px) {
     
     .consentimiento{
         margin-top: 10px;
