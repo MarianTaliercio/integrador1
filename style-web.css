@@ -34,6 +34,7 @@ body{
 .navbar{
     display: flex;
     justify-content: space-between;
+    margin: 0 20px;
     /* background-color: red; */
     border-bottom: #FFC300;
     /* padding-right: 90px; */
@@ -92,19 +93,26 @@ display: none;
 }
 
 .lista-menu {
-    height: 100vh;
-    width: 100vw;
+    position: absolute;
     background-color: #FFC300;
-    /* padding: 20px 60px; */
-    border-radius: 10px;
+    /* display: flex;
+    flex-direction: column;
+    gap: 80px; */
+    top: 70px;
+    right: 0;
+    width: 100%;
+    height: calc(100vh - 70px);
+    z-index: 9999;
     display: none;
 }
 
 .lista-menu li {
-    padding: 10px;
+    text-align: center;
+    padding: 10px 10px;
     color: white;
     list-style-type: none;
-    font-weight: 500;
+    font-weight: 700;
+    font-size: 1.8rem;
 }
 
 }
@@ -436,6 +444,10 @@ display: none;
 
 @media (max-width: 501px) {
 
+    .notas-texto-desktop{
+        display: none;
+    }
+
     .titulo-de-notas{
         text-transform: uppercase;
         background-color: #2a2a2a;
@@ -474,23 +486,31 @@ display: none;
     }
 
     .img-nota1{
-        background: url(/Imagenes/girgolas\ rosas.jpg) no-repeat center/cover;
+        background: url(/Imagenes/girgolas-rosas.png) no-repeat center/cover;
         height: 150px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
     }
 
     .img-nota2{
-        background: url(/Imagenes/hongos\ varios.jpg) no-repeat center/cover;
+        background: url(/Imagenes/hongos-varios.png) no-repeat center/cover;
         height: 150px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
     }
 
     .img-nota3{
         background: url(/Imagenes/reishi.jpg) no-repeat center/cover;
         height: 150px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
     }
 
     .img-nota4{
-        background: url(/Imagenes/melena\ de\ leon.jpg) no-repeat center/cover;
+        background: url(/Imagenes/melena-de-leon.png) no-repeat center/cover;
         height: 150px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
     }
 
     .titulo-notas-desktop{
@@ -672,6 +692,10 @@ display: none;
 
 @media (max-width: 501px) {
 
+    .market-desktop{
+        display: none;
+    }
+
     .precios{
         margin-top: 50px;
         padding: 0px 0 50px;
@@ -693,9 +717,9 @@ display: none;
 
     .girgolas, .portobellos, .melena-de-leon{
         margin: 0 auto;
-        padding: 5px;
+        padding: 5px 20px;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         width: 95%;
         height: 60px;
@@ -706,21 +730,21 @@ display: none;
     .girgolas-img{
         height: 95%;
         width: 50px;
-        background: url(/Imagenes/girgolas\ rosas.jpg) no-repeat center/cover;
+        background: url(/Imagenes/girgolas-rosas.png) no-repeat center/cover;
         border-radius: 50px;
     }
 
     .portobellos-img{
         height: 95%;
         width: 50px;
-        background: url(/Imagenes/girgolas\ rosas.jpg) no-repeat center/cover;
+        background: url(/Imagenes/hongos-varios.png) no-repeat center/cover;
         border-radius: 50px;
     }
 
     .melena-de-leon-img{
         height: 95%;
         width: 50px;
-        background: url(/Imagenes/girgolas\ rosas.jpg) no-repeat center/cover;
+        background: url(/Imagenes/melena-de-leon.png) no-repeat center/cover;
         border-radius: 50px;
     }
 
@@ -906,19 +930,24 @@ display: none;
     cursor: pointer;
 }
 
+}
+
 /*fin ecommerce*/
 
 /*contacto*/
+
+@media (max-width: 501px) {
 
 .contacto-web{
     background-color: #2a2a2a;
     color: white;
     /* height: 250px; */
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    gap: 50px;
+    gap: 20px;
     align-items: center;
-    padding: 50px 0;
+    padding: 30px 0;
 }
 
 .contacto-web h3{
@@ -932,6 +961,10 @@ display: none;
     width: 250px;
 }
 
+.contacto-web-input label{
+    text-align: center;
+}
+
 .contacto-web-input input{
     border-style: none;
     padding: 5px;
@@ -943,6 +976,46 @@ display: none;
     border-radius: 10px;
     margin-top: 10px;
 }
+
+}
+
+@media (min-width: 501px) {
+
+    .contacto-web{
+        background-color: #2a2a2a;
+        color: white;
+        /* height: 250px; */
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        align-items: center;
+        padding: 50px 0;
+    }
+    
+    .contacto-web h3{
+        font-size: 1.8rem;
+    }
+    
+    .contacto-web-input{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        width: 250px;
+    }
+    
+    .contacto-web-input input{
+        border-style: none;
+        padding: 5px;
+    } 
+    
+    .contacto-enviar{
+        width: 50%;
+        margin: 0 auto;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+    
+    }
 
 /*fin del contacto*/
 
