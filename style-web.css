@@ -48,9 +48,11 @@ hr {
 }
 
 .navbar a {
-    height: 70px;
+    /* height: 70px; */
     display: flex;
     align-items: center;
+    /* padding: 50px 0px; */
+    /* background-color: #000; */
 }
 
 .logotipo {
@@ -107,8 +109,9 @@ display: none;
 }
 
 .lista-menu li {
+    margin: 0 auto;
     text-align: center;
-    padding: 10px 10px;
+    padding: 50px 10px;
     color: white;
     list-style-type: none;
     font-weight: 700;
