@@ -239,6 +239,10 @@ display: none;
         color: white;
     }
 
+    .hero-desktop button:hover{
+        cursor: pointer;
+    }
+
     .gral-flechas{
         display: flex;
         justify-content: space-between;
@@ -424,7 +428,6 @@ display: none;
 
 }
 
-
 /*fin de mision empresarial*/
 
 
@@ -528,7 +531,7 @@ display: none;
         background-color: white;
         padding-bottom: 10px;
         /* margin: 5px; */
-        border-radius: 5px;
+        border-radius: 10px;
         cursor: pointer;
         box-shadow:0 2px 10px rgba(0,0,0,.3);
         width: 250px;
@@ -541,23 +544,31 @@ display: none;
     }
 
     .img-nota1{
-        background: url(/Imagenes/girgolas\ rosas.jpg) no-repeat center/cover;
+        background: url(/Imagenes/girgolas-rosas.png) no-repeat center/cover;
         height: 250px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
     }
 
     .img-nota2{
-        background: url(/Imagenes/hongos\ varios.jpg) no-repeat center/cover;
+        background: url(/Imagenes/reishi.jpg) no-repeat center/cover;
         height: 250px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
     }
 
     .img-nota3{
-        background: url(/Imagenes/reishi.jpg) no-repeat center/cover;
+        background: url(/Imagenes/hongos-varios.png) no-repeat center/cover;
         height: 250px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
     }
 
     .img-nota4{
-        background: url(/Imagenes/melena\ de\ leon.jpg) no-repeat center/cover;
+        background: url(/Imagenes/melena-de-leon.png) no-repeat center/cover;
         height: 250px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
     }
 
     .notas-texto-desktop{
@@ -724,6 +735,7 @@ display: none;
 .market-desktop{
     display: flex;
     flex-direction: column;
+    margin-bottom: 80px;
 }
 
 .market-titulo{
@@ -746,7 +758,7 @@ display: none;
 
 .market-1, .market-2, .market-3, .market-4, .market-5, .market-6{
     width: 150px;
-    height: 200px;
+    height: 180px;
     margin: 20px 0px;
     border-radius: 10px;
     /* padding: 20px; */
@@ -754,22 +766,185 @@ display: none;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    background-color: #F3F3F3;
+    background-color: #F1F1F1;
 }
 
 .market-1:hover, .market-2:hover, .market-3:hover, .market-4:hover, .market-5:hover, .market-6:hover{
     background-color: white;
     box-shadow: -1px 8px 20px -6px rgba(0,0,0,0.5);
+    cursor: pointer;
 }
 
 .market-1 img, .market-2 img, .market-3 img, .market-4 img, .market-5 img, .market-6 img{
     height: 100px;
 }  
 
-
+.market-banner{
+    margin: 30px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    /* background-color: #000; */
+    /* height: 100%; */
 }
+
+.banner1{
+    background: url(/Imagenes/banner1.png) no-repeat center/cover;
+    width: 30%;
+    height: 230px;
+    border-radius: 15px;
+}
+
+.banner2{
+    background: url(/Imagenes/banner2.png) no-repeat center/cover;
+    width: 30%;
+    border-radius: 15px;
+}
+
+.banner3{
+    background: url(/Imagenes/banner3.png) no-repeat center/cover;
+    width: 30%;
+    border-radius: 15px;
+}
+
+.market-productos-destacados-titulo{
+    display: flex;
+    align-items: baseline;
+    gap: 30px;
+    margin: 30px 50px 10px;
+}
+
+.market-productos-destacados-titulo h3{
+    font-size: 1.5rem;
+}
+
+.market-productos-destacados{
+    margin: 30px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    /* background-color: #000; */
+}
+
+.destacado1, .destacado2, .destacado3, .destacado4{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    /* background-color: #2a2a2a; */
+    gap: 2px;
+    height: 350px;
+    width: 15%;
+    padding: 10px;
+}
+
+.destacado1:hover, .destacado2:hover, .destacado3:hover, .destacado4:hover{
+    border: 1px solid #2a2a2a;
+    border-radius: 10px;
+}
+
+.destacado1-titulo, .destacado2-titulo, .destacado3-titulo, .destacado4-titulo{
+    padding: 20px 0px 10px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.destacado1-img, .destacado2-img, .destacado3-img, .destacado4-img {
+    display: flex;
+    justify-content: center;
+}
+
+.destacado1-img img, .destacado2-img img, .destacado3-img img, .destacado4-img img{
+    height: 150px;
+}
+
+.market-productos-destacados button{
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px 5px;
+    margin-top: 10px;
+    background-color: #FFC300;
+    border-style: none;
+    border-color: #FFC300;
+    border-radius: 10px;
+    cursor:wait;
+}
+
+.destacado-oferta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    /* gap: 50px; */
+    background-color: #FFC300;
+    border-radius: 10px;
+    width: 15%;
+    padding: 0px 20px; 
+}
+
+.destacado-oferta h3{
+    font-size: 2.2rem;
+}
+
+.destacado-oferta input{
+    border-style: none;
+    padding: 5px;
+}
+
+.destacado-oferta-datos{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.enviar:hover{
+    background-color: #2a2a2a;
+    color: white;
+    cursor: pointer;
+}
+
 /*fin ecommerce*/
 
+/*contacto*/
+
+.contacto-web{
+    background-color: #2a2a2a;
+    color: white;
+    /* height: 250px; */
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.contacto-web h3{
+    font-size: 1.8rem;
+}
+
+.contacto-web-input{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 250px;
+}
+
+.contacto-web-input input{
+    border-style: none;
+    padding: 5px;
+} 
+
+.contacto-enviar{
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/*fin del contacto*/
 
 /*fotter*/
 
@@ -794,5 +969,29 @@ display: none;
         height: 50px;
     }
 
+}
 
+@media (min-width: 501px) {
+
+    .fotter{
+        border-top: 1px solid #FFC300;
+        height: 80px;
+        padding: 15px;
+        margin-top: -1px;
+        align-items: center;
+        display: flex;
+        justify-content: space-around;
+        background-color: #2a2a2a;
+        color: white;
+    }
+
+    .fotter p{
+        width: 100px;
+    }
+
+    .fotter img{
+        height: 50px;
+    }
+
+}
 }
